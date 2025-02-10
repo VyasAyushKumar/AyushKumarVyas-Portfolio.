@@ -36,6 +36,9 @@ nav {
     justify-content: space-between;
 
 }
+nav i{
+    display: none;
+}
 
 .nav-left a {
     text-decoration: none;
@@ -236,6 +239,7 @@ nav {
     height: 85vh;
     width: 100%;
     background-color: #34353A;
+    margin-top: -1px;
 }
 
 .elem-one {
@@ -331,6 +335,7 @@ nav {
     text-align: center;
     align-items: center;
     padding: 6vw 2vw;
+    margin-top: -2px;
 }
 
 .display-page .port p {
@@ -695,49 +700,48 @@ nav {
     cursor: none;
 }
 
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media (max-width: 600px)
 {
     .landing-page {
         height: 100%;
         width: 100%;
         text-wrap: wrap;
-        display: flex       ;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+       
+        
     }
     
 nav {
-    height: 4vw;
+    
+    height: 14vw;
     width: 100%;
-    /* background-color: orange; */
     color: white;
+    background-color: #34353A;
     font-family: Arial, Helvetica, sans-serif;
     padding: 2vw 4vw;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
 }
 
 .nav-left a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.801);
-    font-weight: 400;
-    font-size: 18px;
-    margin: 0vw 2vw;
-    padding: 0.2vw 0.5vw;
-    /* background-color: red;    */
-    letter-spacing: 2px;
     display: none;
     
 }
-.nav-left a:hover{
-    border-bottom: 2px solid #C7B455;
-    /* transition: all ease 0.9s; */
-    color: #C7B455;
-    
-    
-    
+nav i {
+    display: block;
+    cursor: pointer;
+    padding-right: 4vw;
+    font-size: 4vw;
 }
+ 
 
-.nav-right {
+.nav-right {    
     display: flex;
     letter-spacing: -5px;
 }
@@ -753,103 +757,135 @@ nav {
     border-bottom: 2px solid #C7B455;
 }
 
-.content-one {
-    height: 92vh;
-    width: 50%;
-    /* background-color: palegreen;  */
-}
+/* ///////////////////////////////////////////////////////// */
+/* .dev{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .content-one {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: palegreen; 
+} */
 
 .content-one h1 {
     color: #ffffffc4;
-    font-size: 5vw;
+    font-size: 17vw;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 5vw;
+ 
+    line-height: 13vw;
+    margin-left: -34vw;
 }
 
 .tag {
-    margin-top: 6vw;
-    margin-left: 17vw;
-    /* border-bottom: 2px solid #C7B455; */
-    height: 4.9vw;
+    margin-top: 18vw;
 }
 
 .content-one .social {
     color: white;
-    /* display: flex; */
+    margin-top: 36vw;
+    gap: 16vw;
+  
 }
 
 .tag span {
     color: #C7B455;
     border-bottom: 2px solid #C7B455;
     padding: 2vw 4vw;
+ 
     margin-left: -4.6vw;
+ 
 
 
 }
 
 .social {
     position: absolute;
-    left: 9vw;
-    top: 25vw;
+    left: 20vw;
+    top: 27vw;
     display: flex;
+    /* gap: -10vw; */
+    /* background-color: seagreen; */
 
 }
 
-.social p {
-    border-right: 2px solid #C7B455;
-    padding: 0vw 1vw;
-    width: 10vw;
-    font-size: 16px;
-    letter-spacing: 2px;
+ 
+.social a{
+    padding-right: 27vw;
+    /* background-color: red; */
+    /* padding-top: 2vw; */
+    margin-top: -8vw;
+    font-size: 4.7vw;
+    margin-left: -10vw;
 }
 
 /* #anti {
     display: block;
 } */
 .content-two {
-    height: 92vh;
-    width: 50%;
-    /* background-color: orangered; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* background-color: rgba(255, 68, 0, 0.585); */
+    top: 54vw;
     color: white;
-    padding: 13vw 0vw 0vw 16vw;
+    text-align: start;
+   
 
 }
 
 .content-two span {
     color: #C7B455;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 27px;
+    margin-left: -5vw;
     letter-spacing: 1.5px;
+    font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
     /* font-weight: 600; */
+    /* background-color: seagreen; */
 
 }
 
 .content-two p {
     color: rgba(255, 255, 255, 0.719);
-    width: 70%;
+    width: 100%;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 0.4vw;
-    line-height: 2vw;
+    padding-top: 1vw;
+    line-height: 6vw;
+    margin-top: 2vw;
+
+    /* background-color: black; */
+    margin-left: -5vw;
 }
+.content-two h2 {
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    line-height: 5.8vw;
+    letter-spacing: 1px;
+    /* background-color: blue; */
+    padding-top: 1vw;
+    margin-left: -5vw;
+}   
 
 .content-two a {
     text-decoration: none;
     color: #C7B455;
     font-family: Arial, Helvetica, sans-serif;
     /* margin-top: 7vw; */
+    position: absolute;
+    background-color: red;
+    left: -30vw;
 }
 
-.content-two h2 {
-    font-size: 2.5vw;
-    color: rgba(255, 255, 255, 0.76);
-    font-family: Arial, Helvetica, sans-serif;
-    width: 70%;
-    line-height: 2.9vw;
-    letter-spacing: 1px;
-    padding-top: 1vw;
-}
+
 
 #me {
     height: 60px;
@@ -862,23 +898,19 @@ nav {
     ;
     color: #C7B455;
     letter-spacing: 2px;
-    margin-top: 17vw;
-    margin-left: 16vw;
+    margin-top: 106vw;
+    margin-left: 35vw;
+    border-radius: 4px;
     cursor: pointer;
     font-weight: 700;
 }
 
-#me:hover {
-    border: 2px solid black;
-    color: black;
-    transition: all ease 0.5s;
-
-}
-
 .dev {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    
 }
 
 .circle {
@@ -887,10 +919,10 @@ nav {
     background: #2B2B33;
     border-radius: 50%;
     position: absolute;
-    margin-top: 100vw;
-    margin-right: 76vw;
-    z-index: 9;
-    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); */
+    /* display: none; */
+    bottom: -19vw;
+    left: 4vw;
+    
 
 }
 
@@ -898,38 +930,44 @@ nav {
     height: 400px;
     width: 450px;
     background: url(./memedia/Me-ai-brush-removebg-lpl5nvkc.png) no-repeat;
-    /* position: absolute; */
+    position: absolute;
     z-index: 10;
     background-size: contain;
-    top: 124.7vw;
-    /* bottom: -90vw; */
-    left: -4vw;
+    left: 8vw;
+    top: 128vw;
     border-radius: 40px;
+    display: block;
+    overflow: hidden;
 
+}
+.men img{
+    height: 300px;
 }
 
 /* Layout page start here and all the divs under layout is here */
 
+
+
 .layout-page {
-    height: 85vh;
+    height: 90vh;
     width: 100%;
     background-color: #34353A;
+  
 }
 
 .elem-one {
     height: 35vh;
     width: 100%;
-    /* background-color: blue; */
     text-align: center;
-    padding-top: 3vw;
-    /* justify-content: center; */
-    /* display: flex; */
+    padding-top: 10vw;
+    text-align: start;
+    padding-left: 8vw;
+    letter-spacing: 0.5px;
+ 
+ 
+ 
 }
-
-/* .elem-one p {
-
-    color: #C7B455;
-} */
+ 
 .elem-one h1 {
     color: rgba(255, 255, 255, 0.719);
     font-family: Arial, Helvetica, sans-serif;
@@ -940,58 +978,60 @@ nav {
 .elem-one .services p {
     font-family: Arial, Helvetica, sans-serif;
     color: #E1A239;
-    font-size: 18px;
-    letter-spacing: 1.8px;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 8vw;
+    margin-bottom: 3vw;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .elem-one .serv p {
     color: rgba(255, 255, 255, 0.541);
-    width: 40%;
-    text-align: center;
+    width: 100%;
+    text-align: start;
+ 
     display: flex;
     /* justify-content: center; */
-    margin-left: 31vw;
-    margin-top: 1vw;
-    font-size: 19px;
+    margin-left: 0vw;
+    margin-top: 5vw;
+    margin-bottom: 40vw;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .elem-two {
     height: 40vh;
     width: 100%;
     /* background-color: orange; */
-    display: flex;
-    align-items: center;
+    display: inline-block;
     justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin-top: 10vw;
+    padding: 1vw;
+    padding-left: 4vw;
+   
+}
+.elem-two i{
+    font-size: 33vw;
 }
 
 .inner-elem {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
     background-color: #2E2F34;
     margin: 0vw 1vw;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-top: 6vw;
+    margin-left: 4vw;
+ 
+ 
 }
+ 
 
-/* .elem-three {
-    height: 25vh;
-    width: 100%;
-    background-color: red;
-    margin-top: -11.9vw;
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-}
-.text-elem {
-    height: 100px;
-    width: 140px;
-    margin: 0vw 3vw;        
-    background-color: #dadada;
-} */
-
-/* layout page ends here */
-
-/* display page starts here */
+ 
 
 .display-page {
     height: 150vh;
